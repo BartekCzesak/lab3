@@ -1,5 +1,6 @@
 #include "Slav.h"
 #include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -26,4 +27,9 @@ Slav::Slav()
 string Slav::description()
 {
 	return string("  ") + _name + " [" + to_string(_id) + "]";
+}
+
+gender Slav::Sex()
+{
+	return (_name[_name.length()-1]=='a') ? woman : man;
 }

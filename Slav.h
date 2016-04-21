@@ -1,8 +1,16 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <ctime>
+#include <cstdlib>
+#include <iostream>
+#include <iterator>
+#include <string>
+
 
 using namespace std;
+
+enum gender {man, woman};
 
 class Slav
 {
@@ -24,4 +32,6 @@ public:
 	int id() { return _id; }
 
 	string description();
+	
+	gender Sex();
 };
